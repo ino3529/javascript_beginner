@@ -6,16 +6,17 @@
 </head>
 <body>
  <script type=text/javascript>
-   var point = 82
-   if (point >= 90) {
-       console.log("優");
-   } else if (point >= 80) {
-       console.log("良");
-   } else if (point >= 60) {
-       console.log("可");
-   } else if (point < 60) {
-       console.log("不可");
-   }
+    var signal = 'blue'
+    switch(signal) {
+        case "red": console.log('止まる');
+        break;
+        case "yellw": console.log('気を付けて進む');
+        break;
+        case "blue": console.log('進む');
+        break;
+        default: console.log('壊れているので修理する');
+        break;  
+    }
  </script>   
 </body>
 </html>
