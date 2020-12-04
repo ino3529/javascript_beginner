@@ -6,16 +6,12 @@
 </head>
 <body>
  <script type=text/javascript>
-    var signal = 'blue'
-    switch(signal) {
-        case "red": console.log('止まる');
-        break;
-        case "yellw": console.log('気を付けて進む');
-        break;
-        case "blue": console.log('進む');
-        break;
-        default: console.log('壊れているので修理する');
-        break;  
+    for(i = 0; i < 100; i++){
+        if(i % 2 === 0) {
+            console.log(`${i}は偶数です`);
+        } else {
+            console.log(`${i}は奇数です`);
+        }
     }
  </script>   
 </body>
