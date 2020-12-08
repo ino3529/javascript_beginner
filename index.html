@@ -5,14 +5,16 @@
      <title>JavaScriptのレッスンレッスン</title>
 </head>
 <body>
- <script type=text/javascript>
-    for(i = 0; i < 100; i++){
-        if(i % 2 === 0) {
-            console.log(`${i}は偶数です`);
-        } else {
-            console.log(`${i}は奇数です`);
-        }
-    }
- </script>   
+  <button id="add">テキストを追加</button>
+  <script>
+    
+
+    document.getElementById("add").addEventListener("click", function() {
+      var p = document.createElement("p");
+      var text = document.createTextNode("JavaScriptの勉強");
+      document.body.appendChild(p).appendChild(text);
+    })
+    </script>
+       
 </body>
 </html>
