@@ -2,19 +2,29 @@
 <html lang="jp">
 <head>
     <meta charset="UTF-8">
-     <title>JavaScriptのレッスンレッスン</title>
+     <title>JavaScriptスキル突破チャレンジ</title>
+     <style>
+       .hide{
+         display:none;
+       }
+       .show{
+         display:block;
+       }
+     </style>
 </head>
 <body>
-  <button id="add">テキストを追加</button>
+  <p>ボタンを押すと画像が表示/非表示されるプログラム</p>
+  <p><button id='button'>クリック</button></p>
+  <img src='./manaby.png' alt='' id='img' class='hide'>
   <script>
-    
-
-    document.getElementById("add").addEventListener("click", function() {
-      var p = document.createElement("p");
-      var text = document.createTextNode("JavaScriptの勉強");
-      document.body.appendChild(p).appendChild(text);
-    })
-    </script>
-       
+    var button = document.getElementById('button');
+    var img = document.getElementById('img');
+    function toggle(){
+      img.classList.toggle('hide');
+    }
+    button.onclick = function(){
+      toggle();
+    };
+    </script>    
 </body>
 </html>
